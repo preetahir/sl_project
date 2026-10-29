@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookCatalog>
+  <book id="6" featured="true">
+    <title>Cloud Native Microservices with Docker and Kubernetes</title>
+    <slug>cloud-native-microservices</slug>
+    <isbn>978-1-492-05647-8</isbn>
+    <author id="106">
+      <name>Kiran Deshmukh</name>
+      <email>kiran@devopsforge.com</email>
+      <bio>Cloud Solutions Architect specializing in container orchestration, service meshes, and observability pipelines.</bio>
+    </author>
+    <category slug="cloud-computing">Cloud Computing</category>
+    <publishedYear>2026</publishedYear>
+    <price>54.99</price>
+    <rating>4.9</rating>
+    <language>English</language>
+    <coverImage>cloud_microservices.svg</coverImage>
+    <summary>Master enterprise-ready container patterns, declarative GitOps deployment workflows, and service mesh telemetry with real production examples.</summary>
+    <chapters>
+      <chapter id="1">
+        <chapterNumber>1</chapterNumber>
+        <title>Containerization Best Practices</title>
+        <content>Multi-stage builds, non-root user execution, and distroless base images drastically reduce container attack surfaces and build times.</content>
+      </chapter>
+      <chapter id="2">
+        <chapterNumber>2</chapterNumber>
+        <title>Ingress, Services, and Service Meshes</title>
+        <content>Demystifying packet routing within Kubernetes clusters using Envoy sidecars, mutual TLS (mTLS), and intelligent traffic splitting for Canary deployments.</content>
+      </chapter>
+    </chapters>
+  </book>
+</bookCatalog>
+

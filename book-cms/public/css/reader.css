@@ -1,0 +1,329 @@
+/**
+ * LibrisCMS - Reader Mode Stylesheet
+ * Ergonomic, Distraction-Free Typography & Custom Themes
+ */
+
+/* Reader Theme Definitions */
+body.reader-body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Light Reader Theme */
+html[data-reader-theme="light"] body.reader-body {
+  --reader-bg: #ffffff;
+  --reader-toolbar-bg: rgba(255, 255, 255, 0.95);
+  --reader-text: #1a1a1a;
+  --reader-muted: #666666;
+  --reader-border: #eaeaea;
+  --reader-progress: #4f46e5;
+  background-color: var(--reader-bg);
+  color: var(--reader-text);
+}
+
+/* Sepia (Paper Warmth) Theme */
+html[data-reader-theme="sepia"] body.reader-body {
+  --reader-bg: #fbf0d9;
+  --reader-toolbar-bg: rgba(251, 240, 217, 0.95);
+  --reader-text: #3f2a14;
+  --reader-muted: #7c6853;
+  --reader-border: #ebd9ba;
+  --reader-progress: #b45309;
+  background-color: var(--reader-bg);
+  color: var(--reader-text);
+}
+
+/* Dark (Nocturnal) Theme */
+html[data-reader-theme="dark"] body.reader-body {
+  --reader-bg: #121820;
+  --reader-toolbar-bg: rgba(18, 24, 32, 0.95);
+  --reader-text: #d6e2ee;
+  --reader-muted: #8899a6;
+  --reader-border: #233140;
+  --reader-progress: #38bdf8;
+  background-color: var(--reader-bg);
+  color: var(--reader-text);
+}
+
+/* Top Progress Track */
+.reading-progress-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  z-index: 1000;
+}
+
+.reading-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--reader-progress);
+  transition: width 0.1s linear;
+}
+
+/* Reader Toolbar */
+.reader-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background: var(--reader-toolbar-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--reader-border);
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reader-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.reader-book-identity {
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-book-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.reader-chapter-title {
+  font-size: 0.75rem;
+  color: var(--reader-muted);
+}
+
+.reader-toolbar-center {
+  flex: 1;
+  max-width: 380px;
+}
+
+.reader-chapter-select {
+  width: 100%;
+  padding: 0.4rem 0.75rem;
+  background: transparent;
+  border: 1px solid var(--reader-border);
+  color: var(--reader-text);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.reader-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.reader-control-group {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--reader-border);
+  border-radius: 6px;
+  padding: 2px;
+}
+html[data-reader-theme="dark"] .reader-control-group {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.font-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--reader-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.font-toggle-btn.active {
+  background: var(--reader-bg);
+  color: var(--reader-text);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.size-btn {
+  background: none;
+  border: none;
+  color: var(--reader-text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.size-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--reader-muted);
+  min-width: 42px;
+  text-align: center;
+}
+
+/* Theme Swatches */
+.reader-theme-swatches {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.theme-swatch:hover {
+  transform: scale(1.15);
+}
+.theme-swatch.active {
+  border-color: var(--reader-progress);
+  box-shadow: 0 0 0 2px var(--reader-bg);
+}
+
+.swatch-light { background: #ffffff; border-color: #ccc; }
+.swatch-sepia { background: #fbf0d9; border-color: #d8c29d; }
+.swatch-dark { background: #121820; border-color: #445566; }
+
+/* Main Reading Canvas */
+.reader-canvas {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+.reader-article {
+  width: 100%;
+  max-width: 740px;
+}
+
+.reader-article-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--reader-border);
+}
+
+.chapter-number-pill {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--reader-progress);
+  margin-bottom: 0.75rem;
+}
+
+.chapter-headline {
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.chapter-stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--reader-muted);
+}
+
+/* Typographic Font Classes */
+html[data-reader-font="serif"] .reader-content,
+html[data-reader-font="serif"] .chapter-headline {
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+html[data-reader-font="sans"] .reader-content,
+html[data-reader-font="sans"] .chapter-headline {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+html[data-reader-font="mono"] .reader-content,
+html[data-reader-font="mono"] .chapter-headline {
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+/* Font Size Scaling */
+html[data-reader-size="small"] .reader-content {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+html[data-reader-size="medium"] .reader-content {
+  font-size: 1.18rem;
+  line-height: 1.85;
+}
+
+html[data-reader-size="large"] .reader-content {
+  font-size: 1.35rem;
+  line-height: 1.95;
+}
+
+html[data-reader-size="xlarge"] .reader-content {
+  font-size: 1.55rem;
+  line-height: 2.05;
+}
+
+.reader-content p {
+  margin-bottom: 1.6em;
+  text-align: justify;
+}
+
+/* Chapter Nav Footer */
+.chapter-nav-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--reader-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-disabled {
+  font-size: 0.9rem;
+  color: var(--reader-muted);
+}
+
+/* Mobile Responsiveness for Reader */
+@media (max-width: 768px) {
+  .reader-toolbar {
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+  }
+  .reader-toolbar-center {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+  }
+  .reader-canvas {
+    padding: 2rem 1rem 4rem;
+  }
+  .chapter-nav-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+

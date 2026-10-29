@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 580" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cloudBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="60%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="580" rx="12" fill="url(#cloudBg)"/>
+  <rect x="0" y="0" width="28" height="580" fill="#000" opacity="0.3"/>
+  <line x1="28" y1="0" x2="28" y2="580" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5"/>
+  <rect x="54" y="55" width="140" height="24" rx="4" fill="#38bdf8" fill-opacity="0.2"/>
+  <text x="64" y="71" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#e0f2fe" letter-spacing="1.5">CLOUD COMPUTING</text>
+  <text x="54" y="135" font-family="'Georgia', serif" font-size="28" font-weight="bold" fill="#ffffff">
+    <tspan x="54" dy="0">Cloud Native</tspan>
+    <tspan x="54" dy="36" fill="#7dd3fc">Microservices with</tspan>
+    <tspan x="54" dy="36">Kubernetes</tspan>
+  </text>
+  <line x1="54" y1="480" x2="350" y2="480" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="54" y="515" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" fill="#f8fafc">Kiran Deshmukh</text>
+  <text x="54" y="535" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#bae6fd">Solutions Architect</text>
+  <rect x="300" y="500" width="55" height="30" rx="6" fill="#fbbf24" fill-opacity="0.2"/>
+  <text x="327" y="520" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24">★ 4.9</text>
+</svg>

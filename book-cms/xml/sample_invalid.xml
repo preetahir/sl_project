@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookCatalog>
+  <!-- INVALID BOOK FOR TESTING XSD VALIDATION -->
+  <book id="999">
+    <title>Invalid Schema Test Entry</title>
+    <!-- Invalid ISBN format violates xs:pattern restriction -->
+    <isbn>INVALID-ISBN-123</isbn>
+    <author>
+      <name>Ghost Author</name>
+    </author>
+    <category>Testing</category>
+    <!-- Published year 1450 is out of xs:minInclusive value="1800" -->
+    <publishedYear>1450</publishedYear>
+    <!-- Missing mandatory <summary> tag -->
+  </book>
+</bookCatalog>
+

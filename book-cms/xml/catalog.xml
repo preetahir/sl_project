@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookCatalog>
+  <metadata>
+    <systemName>LibrisCMS Book Content Management System</systemName>
+    <version>2.5.0</version>
+    <generatedAt>2026-10-29T19:30:00Z</generatedAt>
+    <totalBooks>5</totalBooks>
+  </metadata>
+
+  <book id="1" featured="true">
+    <title>Mastering Modern Web Architecture</title>
+    <slug>mastering-modern-web-architecture</slug>
+    <isbn>978-0-13-468599-1</isbn>
+    <author id="101">
+      <name>Dr. Aris Thorne</name>
+      <email>aris.thorne@webpress.org</email>
+      <bio>Principal architect and international speaker specializing in distributed systems and high-throughput web architectures.</bio>
+    </author>
+    <category slug="web-development">Web Development</category>
+    <publishedYear>2025</publishedYear>
+    <price>44.99</price>
+    <rating>4.9</rating>
+    <language>English</language>
+    <coverImage>web_arch.svg</coverImage>
+    <summary>A comprehensive guide navigating through component modularity, micro-frontends, REST/XML API interoperability, and caching strategies.</summary>
+    <chapters>
+      <chapter id="1">
+        <chapterNumber>1</chapterNumber>
+        <title>Foundations of Scalable Systems</title>
+        <content>Scalability is not an afterthought; it is an architectural discipline woven into every layer of software design. In this opening chapter, we explore decoupling principles, statutory service boundaries, stateless front-ends, and database sharding patterns that allow web applications to serve millions of concurrent users smoothly.</content>
+      </chapter>
+      <chapter id="2">
+        <chapterNumber>2</chapterNumber>
+        <title>Data Interchange: JSON, XML, and Beyond</title>
+        <content>Understanding the evolution of data interchange formats is pivotal for enterprise integration. While lightweight JSON powers single-page apps, XML remains the undisputed standard for validated schemas, contractual interoperability, and semantic document publishing. We evaluate XSD validation and XPath queries in modern PHP backends.</content>
+      </chapter>
+      <chapter id="3">
+        <chapterNumber>3</chapterNumber>
+        <title>Responsive Frontends and Fluid UI</title>
+        <content>A truly responsive design shifts gracefully between device form factors without sacrificing usability or typographic hierarchy. We dissect CSS Grid subgrids, container queries, and dynamic viewport math using clamp() and calc().</content>
+      </chapter>
+    </chapters>
+  </book>
+
+  <book id="2" featured="true">
+    <title>The Art of Algorithmic Thinking</title>
+    <slug>the-art-of-algorithmic-thinking</slug>
+    <isbn>978-0-262-03384-8</isbn>
+    <author id="102">
+      <name>Elena Rostova</name>
+      <email>elena.rostova@cambridge-tech.edu</email>
+      <bio>Computer Scientist and algorithmic contest judge with 15 years of competitive programming mentoring.</bio>
+    </author>
+    <category slug="computer-science">Computer Science</category>
+    <publishedYear>2024</publishedYear>
+    <price>39.50</price>
+    <rating>4.8</rating>
+    <language>English</language>
+    <coverImage>algo_think.svg</coverImage>
+    <summary>Unpack mathematical elegance and computational efficiency through intuitive visual mental models and practical pseudocode.</summary>
+    <chapters>
+      <chapter id="1">
+        <chapterNumber>1</chapterNumber>
+        <title>Thinking in Asymptotic Complexity</title>
+        <content>Big-O notation is often treated as a sterile theoretical hurdle, yet in production software it marks the dividing line between real-time responsiveness and system gridlock. Here we master recurrence relations and amortized runtime proofs.</content>
+      </chapter>
+      <chapter id="2">
+        <chapterNumber>2</chapterNumber>
+        <title>Divide and Conquer Paradigms</title>
+        <content>By partitioning problems into recursively solvable sub-problems, we achieve exponential efficiency leaps. We examine master theorem formulations and parallel merge routines in memory-constrained environments.</content>
+      </chapter>
+    </chapters>
+  </book>
+
+  <book id="3" featured="false">
+    <title>PHP and Laravel Enterprise Playbook</title>
+    <slug>php-laravel-enterprise-playbook</slug>
+    <isbn>978-1-491-91866-1</isbn>
+    <author id="103">
+      <name>Marcus Vance</name>
+      <email>marcus.vance@laradev.io</email>
+      <bio>Enterprise PHP veteran, core contributor, and technical consultant for Fortune 500 SaaS companies.</bio>
+    </author>
+    <category slug="backend-engineering">Backend Engineering</category>
+    <publishedYear>2026</publishedYear>
+    <price>49.00</price>
+    <rating>4.95</rating>
+    <language>English</language>
+    <coverImage>laravel_playbook.svg</coverImage>
+    <summary>Harness PHP 8.1+ attributes, strict typing, fibers, and Laravel's Eloquent ORM, service container, and queued pipelines.</summary>
+    <chapters>
+      <chapter id="1">
+        <chapterNumber>1</chapterNumber>
+        <title>Modern Object-Oriented PHP Patterns</title>
+        <content>Modern PHP is heavily typed, exceptionally fast with JIT compilation, and features first-class enums, constructor property promotion, and readonly classes. Learn how to architect clean domain models free from framework coupling.</content>
+      </chapter>
+      <chapter id="2">
+        <chapterNumber>2</chapterNumber>
+        <title>Laravel Service Providers and IoC</title>
+        <content>The heart of Laravel is its Inversion of Control (IoC) container. We explore binding interfaces, automatic constructor injection, deferred service providers, and lifecycle hooks that keep enterprise applications decoupled.</content>
+      </chapter>
+    </chapters>
+  </book>
+
+  <book id="4" featured="true">
+    <title>Chronicles of the Starward Bound</title>
+    <slug>chronicles-of-the-starward-bound</slug>
+    <isbn>978-0-7653-7667-1</isbn>
+    <author id="104">
+      <name>Sora Takahashi</name>
+      <email>sora@starlore.jp</email>
+      <bio>Award-winning speculative fiction author renowned for hard sci-fi narratives exploring transhuman consciousness.</bio>
+    </author>
+    <category slug="sci-fi-fantasy">Sci-Fi &amp; Fantasy</category>
+    <publishedYear>2023</publishedYear>
+    <price>19.99</price>
+    <rating>4.7</rating>
+    <language>English</language>
+    <coverImage>starward.svg</coverImage>
+    <summary>A deep-space odyssey chronicling humanity's initial contact with an enigmatic orbital monolith orbiting a dying pulsar.</summary>
+    <chapters>
+      <chapter id="1">
+        <chapterNumber>1</chapterNumber>
+        <title>Echoes from the Pulsar</title>
+        <content>The sensor grid aboard the exploratory frigate Aethelgard blinked in an uncharacteristic harmonic pulse. Commander Lyra Drake scrutinized the spectrographic analysis. Something was modulating the electromagnetic flux of PSR B1919+21.</content>
+      </chapter>
+      <chapter id="2">
+        <chapterNumber>2</chapterNumber>
+        <title>The Monolith Wakes</title>
+        <content>Geometric lines across the obsidian structure began to luminesce with cold cerulean fire. As the remote rover crossed the perimeter boundary, encrypted telemetry flooded the transmission buffer with pristine mathematical sequences.</content>
+      </chapter>
+    </chapters>
+  </book>
+
+  <book id="5" featured="false">
+    <title>Responsive Typography and Design Systems</title>
+    <slug>responsive-typography-and-design-systems</slug>
+    <isbn>978-1-937785-50-5</isbn>
+    <author id="105">
+      <name>Camilla Lindqvist</name>
+      <email>camilla@nordicui.design</email>
+      <bio>Design systems lead and typography researcher promoting universal accessibility and responsive aesthetics.</bio>
+    </author>
+    <category slug="ui-ux-design">UI/UX Design</category>
+    <publishedYear>2025</publishedYear>
+    <price>32.00</price>
+    <rating>4.6</rating>
+    <language>English</language>
+    <coverImage>typography.svg</coverImage>
+    <summary>Create harmonious reading environments across mobile screens, foldable displays, e-readers, and desktop viewports.</summary>
+    <chapters>
+      <chapter id="1">
+        <chapterNumber>1</chapterNumber>
+        <title>The Golden Ratio and Typographic Scales</title>
+        <content>Text is the interface. Choosing baseline ratios and modular type scales establishes organic visual rhythm. We compute dynamic font size ladders using CSS clamp() that scale effortlessly across 320px to 4K resolutions.</content>
+      </chapter>
+      <chapter id="2">
+        <chapterNumber>2</chapterNumber>
+        <title>Dark Mode Ergonomics and Contrast Ratios</title>
+        <content>Dark theme implementation requires far more than color inversion. We study perceptual contrast, desaturating vibrant accent tones, and utilizing WCAG 2.2 AAA guidelines to minimize eyestrain during prolonged nocturnal reading.</content>
+      </chapter>
+    </chapters>
+  </book>
+</bookCatalog>
+

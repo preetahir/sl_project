@@ -1,0 +1,81 @@
+/**
+ * LibrisCMS - Print Stylesheet
+ * Optimized for Physical Paper, PDF Export, and Clean Typographic Output
+ */
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Hide Interactive and Promotional UI Elements */
+  .site-header,
+  .site-footer,
+  .hero-section,
+  .featured-section,
+  .filter-toolbar,
+  .category-filter-nav,
+  .reader-toolbar,
+  .chapter-nav-footer,
+  .btn,
+  .quick-view-btn,
+  .toast-container,
+  .flash-container,
+  .add-review-card,
+  .custom-dialog,
+  .admin-actions,
+  .studio-tabs {
+    display: none !important;
+  }
+
+  /* Reset Layout Constraints */
+  .section-container,
+  .reader-canvas,
+  .reader-article {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Typography for Print */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    color: #000000 !important;
+  }
+
+  p, article, .chapter-item {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .chapter-item, .book-card, .data-table tr {
+    page-break-inside: avoid;
+  }
+
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .data-table th, .data-table td {
+    border: 1px solid #333333 !important;
+    padding: 6pt;
+    color: #000000 !important;
+  }
+
+  /* Clean URLs for links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555555;
+  }
+
+  /* Avoid printing link URLs for buttons and internal anchors */
+  a.btn:after, a[href^="#"]:after {
+    content: "";
+  }
+}
+

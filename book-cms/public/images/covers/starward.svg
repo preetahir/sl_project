@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 580" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18002e"/>
+      <stop offset="60%" stop-color="#2e1065"/>
+      <stop offset="100%" stop-color="#090117"/>
+    </linearGradient>
+    <linearGradient id="nebulaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="580" rx="12" fill="url(#spaceBg)"/>
+  <rect x="0" y="0" width="28" height="580" fill="#000" opacity="0.3"/>
+  <line x1="28" y1="0" x2="28" y2="580" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5"/>
+  <!-- Space Stars and Rings -->
+  <g fill="#fdf4ff" opacity="0.6">
+    <circle cx="120" cy="90" r="1.5"/><circle cx="320" cy="70" r="2"/><circle cx="210" cy="180" r="1.2"/>
+    <circle cx="340" cy="280" r="1.5"/><circle cx="90" cy="320" r="1.8"/><circle cx="180" cy="400" r="1.4"/>
+  </g>
+  <g stroke="#a855f7" stroke-opacity="0.35" stroke-width="1.8" fill="none">
+    <ellipse cx="270" cy="200" rx="90" ry="25" transform="rotate(-25 270 200)"/>
+    <ellipse cx="270" cy="200" rx="130" ry="35" transform="rotate(-25 270 200)"/>
+    <circle cx="270" cy="200" r="35" fill="#f43f5e" fill-opacity="0.8"/>
+  </g>
+  <rect x="54" y="55" width="125" height="24" rx="4" fill="#a855f7" fill-opacity="0.2"/>
+  <text x="64" y="71" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#c084fc" letter-spacing="1.5">SCI-FI &amp; FANTASY</text>
+  <text x="54" y="135" font-family="'Georgia', serif" font-size="32" font-weight="bold" fill="#ffffff">
+    <tspan x="54" dy="0">Chronicles of</tspan>
+    <tspan x="54" dy="38" fill="url(#nebulaGrad)">the Starward</tspan>
+    <tspan x="54" dy="38">Bound</tspan>
+  </text>
+  <text x="54" y="270" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#e9d5ff">
+    <tspan x="54" dy="0">First Contact, Stellar Mysteries</tspan>
+    <tspan x="54" dy="18">&amp; Humanity's Transcendent Voyage</tspan>
+  </text>
+  <line x1="54" y1="480" x2="350" y2="480" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="54" y="515" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" fill="#f8fafc">Sora Takahashi</text>
+  <text x="54" y="535" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#d8b4fe">Hugo &amp; Nebula Award Nominee</text>
+  <rect x="300" y="500" width="55" height="30" rx="6" fill="#fbbf24" fill-opacity="0.2"/>
+  <text x="327" y="520" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold" fill="#fbbf24">★ 4.7</text>
+</svg>
